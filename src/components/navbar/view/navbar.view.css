@@ -1,0 +1,189 @@
+.nav-bar {
+    background-color: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 50rem;
+}
+
+.euAnimation {
+    transition: 0.6s;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.euAnimationRollback {
+    transition: 0.6s;
+    transform: rotateY(0deg);
+    backface-visibility: visible;
+
+}
+
+.icon {
+    color: rgb(231, 227, 227);
+    font-size: 1.7rem !important;
+    transition: 0.4s;
+}
+
+.icon:hover {
+    color: white;
+    font-size: 2.4rem !important;
+    transition: 0.4s;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem 0.7rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+.div-content {
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+
+.component-text {
+    font-size: 3.5rem;
+    color: rgb(57, 54, 54);
+    font-weight: bold;
+}
+
+.component-text2 {
+    font-size: 3.5rem;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #0e87bb, #d91e53);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.component-text3 {
+    font-size: 3.5rem;
+    color: rgb(233, 231, 231);
+    font-weight: 100;
+}
+
+.brand {
+    width: 2rem;
+    transition: 0.6s;
+}
+
+.brand2 {
+    width: 2.5rem;
+    transition: 0.6s;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 0rem;
+    left: -58rem;
+}
+
+.languages2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 0rem;
+    left: -117rem;
+    width: 5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: 1.2px 1.2px 1.2px 1.2px rgb(36, 35, 35);
+    
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 1.7rem;
+    width: 1.7rem;
+    left: 4px;
+    bottom: 4px;
+    background-image: url('../../../assets/images/br2.png');
+    image-rendering: auto;
+    background-size: 2.9rem;
+    background-position: -0.6rem;
+    image-resolution: inherit;
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: 1.2px 1.2px 1.2px 1.2px rgb(36, 35, 35);
+
+}
+
+input:checked+.slider {
+    background-color: #757473;
+    background-image: linear-gradient(45deg, #0e87bb, #d91e53) !important;
+    box-shadow: 1.2px 1.2px 1.2px 1.2px rgb(36, 35, 35);
+    
+}
+
+input:focus+.slider {
+    box-shadow: 1.2px 1.2px 1.2px 1.2px rgb(36, 35, 35);
+
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-image: url('../../../assets/images/eua2.png');
+    box-shadow: 1.2px 1.2px 1.2px 1.2px rgb(36, 35, 35);
+
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+    box-shadow: 1.2px 1.2px 1.2px 1.2px rgb(36, 35, 35);
+    
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    box-shadow: 1.2px 1.2px 1.2px 1.2px rgb(36, 35, 35);
+
+}
+
+.fixed-navs {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}

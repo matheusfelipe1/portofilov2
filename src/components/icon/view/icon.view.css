@@ -1,0 +1,24 @@
+.icon1 {
+    color: white;
+    font-size: 2.7rem;
+    animation-duration: 1s;
+    animation-name: icon;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    position: fixed;
+    top: 55rem;
+}
+
+
+
+@keyframes icon {
+    0% {
+        font-size: 2.2rem;
+        opacity: 1.0;
+    }
+
+    100% {
+        font-size: 3.7rem;
+        opacity: 0.0;
+    }
+}

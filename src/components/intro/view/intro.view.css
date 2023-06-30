@@ -1,0 +1,131 @@
+
+.animation-eu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.euAnimation {
+    transition: 0.6s;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.euAnimationRollback {
+    transition: 0.6s;
+    transform: rotateY(0deg);
+    backface-visibility: visible;
+
+}
+
+.back {
+    width: 15rem;
+    height: 15rem;
+    background-size: 15rem;
+    border-radius: 15rem;
+    position: absolute;
+    left: -26rem;
+    background-color: rgb(192, 190, 190);
+}
+
+.front {
+    background-image: url('../../../assets/images/eu.jpeg');
+    image-rendering: auto;
+    image-resolution: inherit;
+    width: 15rem;
+    height: 15rem;
+    background-size: 15rem;
+    border-radius: 15rem;
+    box-shadow: 3.5px 3.5px 3.5px 3.5px rgb(36, 35, 35);
+    position: absolute !important;
+    left: 26rem;
+    bottom: 2.3rem;
+}
+
+.icon {
+    color: rgb(231, 227, 227);
+    font-size: 1.7rem !important;
+    transition: 0.4s;
+}
+
+.icon:hover {
+    color: white;
+    font-size: 2.4rem !important;
+    transition: 0.4s;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem 0.7rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+
+.firstTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.component-text {
+    font-size: 3.5rem;
+    color: rgb(57, 54, 54);
+    font-weight: bold;
+}
+
+.component-text2 {
+    font-size: 3.5rem;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #0e87bb, #d91e53);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.component-text3 {
+    font-size: 3.5rem;
+    color: rgb(233, 231, 231);
+    font-weight: 100;
+}
+
+.brand {
+    width: 2rem;
+    transition: 0.6s;
+}
+
+.brand2 {
+    width: 2.5rem;
+    transition: 0.6s;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 0rem;
+    left: -58rem;
+}
+
+.languages2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 0rem;
+    left: -117rem;
+    width: 5rem;
+}

@@ -1,0 +1,114 @@
+.card {
+    width: 80%;
+    /* height: 40vh; */
+    border: 0.25rem solid #212121;
+    border-radius: 2rem;
+    margin-bottom: 10rem;
+    box-shadow: 1.2px 1.2px 1.2px 1.2px rgb(36, 35, 35);
+
+}
+
+.content-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+
+.bol1 {
+    height: 18px;
+    width: 18px;
+    background-color: red;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px 1px rgb(36, 35, 35);
+}
+
+.bol2 {
+    height: 18px;
+    width: 18px;
+    background-color: yellow;
+    box-shadow: 1px 1px 1px 1px rgb(36, 35, 35);
+    border-radius: 1rem;
+}
+
+.bol3 {
+    height: 18px;
+    width: 18px;
+    background-color: green;
+    box-shadow: 1px 1px 1px 1px rgb(36, 35, 35);
+    border-radius: 1rem;
+}
+
+.div-bol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    align-content: start;
+    width: 5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.component-text4 {
+    font-size: 1.4rem;
+    color: rgb(224, 217, 217);
+    font-weight: bold;
+    
+}
+
+.content-text6 {
+    background-color: #363535;
+    padding: 1.1rem;
+    margin-top: 1.5rem;
+    width: 90rem;
+    border-radius: 0.7rem;
+    box-shadow: 1px 1px 1px 1px rgb(36, 35, 35);
+
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.4rem;
+}
+
+.initializing {
+    animation-duration: 6s;
+    animation-name: starting;
+    animation-delay: 0s;
+}
+
+@keyframes starting {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+    
+}
+
+.initializing2 {
+    animation-duration: 3.3s;
+    animation-name: starting2;
+    animation-delay: 0s;
+    position: relative;
+}
+
+@keyframes starting2 {
+    0% {
+        right: 80rem;
+        opacity: 0.0;
+    }
+    100% {
+        right: 0rem;
+        opacity: 1.0;
+    }
+    
+}
