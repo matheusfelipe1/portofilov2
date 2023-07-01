@@ -9,7 +9,7 @@ import { Icon } from '../components/icon/view/icon.view';
 import { AboutMe } from '../components/aboutme/view/about-me.view';
 import { listening } from './App.controller'
 import { useDispatch, useSelector } from 'react-redux'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { start } from '../components/aboutme/viewModel/about-me.viewModel';
 import { Skills } from '../components/skills/view/skills.view';
 import { startSkill } from '../components/skills/viewModel/skills.controller'
@@ -18,7 +18,7 @@ function App() {
   const dispatch = useDispatch()
   const about = useSelector((state: any) => state.app.about)
   const skills = useSelector((state: any) => state.app.skills)
-
+  const icon = useSelector((state: any) => state.app.icon)
   useEffect(() => {
     listen()
   }, [])
@@ -51,14 +51,16 @@ function App() {
       <NavBarView />
       <Intro class={'intro'} />
       <div id='aboutme'>
-        <div>
+        <div style={{ opacity: !about ? '0.0' : '1.0' }}>
           <AboutMe canAnimate={about} />
         </div>
       </div>
       <div id="skills" >
-        <Skills canAnimate={skills} />
+        <div style={{ opacity: !skills ? '0.0' : '1.0' }}>
+          <Skills canAnimate={skills} />
+        </div>
       </div>
-      <Icon icon={about ? 'pi pi-user' : 'pi pi-home'} />
+      <Icon icon={icon} />
       <div style={{ clear: 'both' }}></div>
     </div>
   );
